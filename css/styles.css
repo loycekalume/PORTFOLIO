@@ -167,3 +167,147 @@ header {
   opacity: 1;
   transform: scale(1.1);
 }
+
+/* ===== ABOUT PAGE ===== */
+
+.about-main {
+  background-color: #1a1a2e; 
+  color: #eee;
+  padding: 60px 20px;
+  margin-top:0px;
+}
+
+.about-layout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 0px;
+}
+
+
+
+.profile-section {
+  flex: 1 1 250px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.profile-image {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  /* background: radial-gradient(circle at center, #111 70%, #222); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #e057fc;
+  /* box-shadow: 0 0 30px rgba(224, 87, 252, 0.4); */
+}
+
+.profile-wrapper {
+  text-align: center;
+}
+
+
+.about-heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-heading::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 40%;
+  margin: 6px auto 0;
+  background: linear-gradient(to right, rgb(163, 19, 163), #e057fc, #6ab1f7);
+  border-radius: 2px;
+}
+
+.actual-profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* .rating-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(20%, -20%);
+  background-color: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(4px);
+  padding: 8px 12px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 0.85rem;
+  border: 1px solid #888;
+} */
+
+.about-content {
+  flex: 2 1 500px;
+}
+
+.about-content .section-title {
+  font-size: 2rem;
+  color: #8f34a1;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+.myjourney{
+   background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #444;
+  margin-bottom: 20px;
+
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.badges span {
+  background-color: #16162b;
+  border: 1px solid #888;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.fun-facts {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #444;
+}
+
+.fun-facts h3 {
+  color: #6ab1f7;
+  margin-bottom: 10px;
+}
+
+.fun-facts ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.fun-facts li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
