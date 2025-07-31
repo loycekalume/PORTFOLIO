@@ -16,7 +16,7 @@ body {
 /*navbar*/
 header {
   padding: 20px 40px;
-   background-color: #171722;
+  background-color: #171722;
   backdrop-filter: blur(8px);
   display: flex;
   justify-content: space-between;
