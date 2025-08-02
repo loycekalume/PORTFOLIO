@@ -17,7 +17,7 @@ It showcases my projects, skills, education, contact information,interests and h
 - `/pages/contact.html` – Contact form and details
 - `/css/styles.css` – All the styles
 - `assets/cv/Loyce_Kalume_cv.pdf ` – My downloadable CV
-- `assets/images/ ` – images for profile pic and social media links
+- `assets/images/ ` – images for profile pic ,icons and social media links
 ---
 
 ##  Technologies Used
