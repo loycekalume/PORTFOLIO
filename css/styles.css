@@ -743,5 +743,134 @@ text-align: center;
   transform: scale(1.05);
 }
 
-/*  */
+/* project section */
+.projects{
+ background-color: #1a1a2e ;
+ 
+}
+
+.projects-section {
+  padding: 4rem 1rem;
+  color: #fff;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #b980ff;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.project-card {
+  /* background: linear-gradient(145deg, #111, #1a1a1a); */
+  border-radius: 15px;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #444;
+  margin-bottom: 20px;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.05);
+}
+
+.project-card .icon {
+  font-size: 2rem;
+  color: #ffa726;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.tech-stack span {
+  display: inline-block;
+  background: #2e2e2e;
+  color: #dcdcdc;
+  padding: 0.3rem 0.6rem;
+  margin: 0.2rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+}
+
+.project-links {
+  margin-top: 1rem;
+}
+
+.project-links .btn {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.btn.live {
+  background: #1e88e5;
+  color: #fff;
+}
+
+.btn.code {
+  background: #8e24aa;
+  color: #fff;
+}
+
+.btn.github {
+  background: #7c4dff;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(124, 77, 255, 0.5);
+}
+
+.github-cta {
+  background: linear-gradient(135deg, #111, #1b1b1b);
+  padding: 2rem;
+  border-radius: 15px;
+  margin: 3rem auto 0;
+  max-width: 700px;
+  text-align: center;
+}
+
+.github-cta h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.github-cta p {
+  color: #bbb;
+  margin-bottom: 1rem;
+}
 
