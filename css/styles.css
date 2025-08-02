@@ -85,21 +85,7 @@ header {
 
 
 
-.cv-button {
-  background-color: #111;
-  color: #fff;
-  padding: 8px 16px;
-  border: 1px solid #888;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
 
-.cv-button:hover {
-  background-color: #e057fc;
-  color: #000;
-  border-color: #e057fc;
-}
 
 
 /* Hero Section */
@@ -568,7 +554,7 @@ header {
 }
 
 .cv-icon {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .cv-title {
