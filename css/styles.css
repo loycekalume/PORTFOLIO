@@ -945,8 +945,9 @@ p {
 h2 {
   text-align: center;
   font-size: 2rem;
-  color: #9b5de5;
+  color:white;
   position: relative;
+  margin-bottom: 5px;
 }
 .line{
   width: 100px;
@@ -958,7 +959,7 @@ h2 {
 
 
 section {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 /* Contact section */
@@ -1002,6 +1003,14 @@ textarea {
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s ease;
+
+}
+.info-item:hover {
+  background-color: #b398d4; 
 }
 
 /* Connect with me */
@@ -1014,26 +1023,22 @@ textarea {
 
 }
 
-.icons {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  margin-bottom: 1rem;
-}
-
-.icons i {
-  font-size: 1.5rem;
-  color: #ccc;
-  background: #2a2a2a;
-  padding: 1rem;
+.icon-circle {
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
-  transition: 0.3s;
+  background-color: #9b5de5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
-.icons i:hover {
-  background-color: #9b5de5;
-  color: #fff;
-}
+.icon-circle img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  filter: brightness(0) invert(1); }
 
 .freelance {
   display: flex;
