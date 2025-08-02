@@ -13,6 +13,7 @@ body {
   min-height: 100vh;
   backdrop-filter: brightness(0.8);
 }
+
 /*navbar*/
 header {
   padding: 20px 40px;
@@ -171,10 +172,10 @@ header {
 /* ===== ABOUT PAGE ===== */
 
 .about-main {
-  background-color: #1a1a2e; 
+  background-color: #1a1a2e;
   color: #eee;
   padding: 60px 20px;
-  margin-top:0px;
+  margin-top: 0px;
 }
 
 .about-layout {
@@ -182,7 +183,7 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 60px;
+  gap: 100px;
   margin-top: 0px;
 }
 
@@ -197,15 +198,16 @@ header {
 
 .profile-image {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
+  margin-left: auto;
   border-radius: 50%;
-  /* background: radial-gradient(circle at center, #111 70%, #222); */
+  background: radial-gradient(circle at center, #6744e4 70%, #dd69b1);
   display: flex;
   align-items: center;
   justify-content: center;
   border: 4px solid #e057fc;
-  /* box-shadow: 0 0 30px rgba(224, 87, 252, 0.4); */
+  box-shadow: 0 0 30px rgba(224, 87, 252, 0.4);
 }
 
 .profile-wrapper {
@@ -216,6 +218,7 @@ header {
 .about-heading {
   font-size: 2rem;
   margin-bottom: 20px;
+  margin-left: auto;
 }
 
 .about-heading::after {
@@ -235,29 +238,19 @@ header {
   border-radius: 50%;
 }
 
-/* .rating-box {
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(20%, -20%);
-  background-color: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(4px);
-  padding: 8px 12px;
-  border-radius: 10px;
-  color: #fff;
-  text-align: center;
-  font-size: 0.85rem;
-  border: 1px solid #888;
-} */
 
 .about-content {
   flex: 2 1 500px;
 }
 
-.about-content .section-title {
+
+
+.journey  {
   font-size: 2rem;
   color: #8f34a1;
   margin-bottom: 20px;
+  text-align: left;
+ 
 }
 
 .about-content p {
@@ -266,12 +259,15 @@ header {
   margin-bottom: 20px;
   color: #ccc;
 }
-.myjourney{
-   background-color: rgba(255, 255, 255, 0.05);
+
+.myjourney {
+  background-color: rgba(255, 255, 255, 0.05);
   padding: 20px;
   border-radius: 12px;
   border: 1px solid #444;
   margin-bottom: 20px;
+  width:700px;
+  
 
 }
 
@@ -295,6 +291,7 @@ header {
   padding: 20px;
   border-radius: 12px;
   border: 1px solid #444;
+  width:700px;
 }
 
 .fun-facts h3 {
@@ -318,11 +315,12 @@ header {
   max-width: 1200px;
   margin: auto;
   text-align: center;
-   margin-bottom: 20px;
-  
+  margin-bottom: 20px;
+
 }
-.skills{
-background-color: #1a1a2e;
+
+.skills {
+  background-color: #1a1a2e;
 }
 
 .title {
@@ -360,16 +358,18 @@ background-color: #1a1a2e;
 }
 
 .skill-box {
-  background-color:  rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.05);
   padding: 20px;
   width: 300px;
   border-radius: 12px;
   border: 1px solid #444;
   /* box-shadow: 0 4px 10px rgba(116, 101, 101, 0.4); */
 }
-.skill-box:hover{
+
+.skill-box:hover {
   box-shadow: 10px 10px 10px 10px rgba(116, 101, 101, 0.4);
 }
+
 .category-title {
   color: #a970ff;
   font-size: 1.3rem;
@@ -426,23 +426,26 @@ background-color: #1a1a2e;
     align-items: center;
   }
 }
+
 .languages-section {
   padding: 30px 20px;
   border-radius: 12px;
-  max-width:1500px;
-  
-  
+  max-width: 1500px;
+
+
 }
-.lang{
-   padding: 30px 20px;
+
+.lang {
+  padding: 30px 20px;
   border-radius: 12px;
-  max-width:1100px;
-  margin:auto;
+  max-width: 1100px;
+  margin: auto;
   margin-bottom: 20px;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
-  background-color:  rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid #444;
 }
+
 .center {
   text-align: center;
 }
@@ -457,9 +460,9 @@ background-color: #1a1a2e;
 }
 
 .lang-box {
-   background-color:  rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.05);
   border-radius: 12px;
-   border: 1px solid #444;
+  border: 1px solid #444;
   padding: 20px 15px;
   width: 150px;
   text-align: center;
@@ -486,22 +489,23 @@ background-color: #1a1a2e;
 
 /* Education Section */
 .education-section {
- 
+
   background-color: #1a1a2e;
   margin-top: 0px;
- 
+
 }
 
 .education-section h1 {
   font-size: 2.5rem;
   background: linear-gradient(90deg, #a855f7, #06b6d4);
- -webkit-background-clip: text;
+  -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
-.head{
+
+.head {
   text-align: center;
 }
 
@@ -519,7 +523,7 @@ background-color: #1a1a2e;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:  rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid #444;
   border-radius: 12px;
   padding: 1rem 2rem;
@@ -574,11 +578,11 @@ background-color: #1a1a2e;
   font-size: 1.5rem;
   color: #c084fc;
   margin-top: 3rem;
-text-align: center;
+  text-align: center;
 }
 
 .education-card {
- background-color:  rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid #444;
   border-radius: 12px;
   padding: 1.5rem;
@@ -655,7 +659,7 @@ text-align: center;
   color: #a855f7;
   margin-top: 2rem;
   text-align: center;
-  
+
 }
 
 .certifications-grid {
@@ -663,8 +667,8 @@ text-align: center;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.2rem;
   max-width: 700px;
-  margin:  auto;
-  margin-top:10px;
+  margin: auto;
+  margin-top: 10px;
   /* margin-bottom:20px ; */
   padding: 0 1rem;
 }
@@ -720,9 +724,9 @@ text-align: center;
 
 
 /* project section */
-.projects{
- background-color: #1a1a2e ;
- 
+.projects {
+  background-color: #1a1a2e;
+
 }
 
 .projects-section {
@@ -852,7 +856,7 @@ text-align: center;
 
 /* Interests page */
 .interests-section {
-  margin: auto;   
+  margin: auto;
   max-width: 1000px;
   width: 100%;
   text-align: center;
@@ -862,7 +866,7 @@ text-align: center;
   font-size: 2.8rem;
   font-weight: 800;
   margin-bottom: 40px;
-  color:white;
+  color: white;
   position: relative;
 }
 
@@ -886,7 +890,7 @@ text-align: center;
   background: rgba(255, 255, 255, 0.05);
   padding: 30px 20px;
   border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, background 0.3s ease;
   backdrop-filter: blur(10px);
 }
@@ -912,20 +916,23 @@ p {
   line-height: 1.5;
   color: #ccc;
 }
+
 .container {
   max-width: 1200px;
   margin: auto;
   padding: 2rem;
 }
 
+.container,
 h2 {
   text-align: center;
   font-size: 2rem;
-  color:white;
+  color: white;
   position: relative;
   margin-bottom: 5px;
 }
-.line{
+
+.line {
   width: 100px;
   height: 4px;
   background: linear-gradient(to right, #b620e0, #00cfff);
@@ -944,7 +951,7 @@ section {
   flex-wrap: wrap;
   gap: 2rem;
   margin-top: 2rem;
-   
+
 }
 
 .contact-box {
@@ -965,7 +972,7 @@ textarea {
   margin-bottom: 1rem;
   border-radius: 8px;
   border: none;
-   background-color: rgba(167, 158, 158, 0.05);
+  background-color: rgba(167, 158, 158, 0.05);
   color: #fff;
 }
 
@@ -976,7 +983,7 @@ textarea {
 }
 
 .info-item {
- background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.05);
   padding: 1rem;
   margin-bottom: 1rem;
 
@@ -987,8 +994,9 @@ textarea {
   transition: background-color 0.3s ease;
 
 }
+
 .info-item:hover {
-  background-color: #b398d4; 
+  background-color: #b398d4;
 }
 
 .icons {
@@ -1007,19 +1015,21 @@ textarea {
 }
 
 .icon-link:hover {
-  background-color: #8e44ad; 
-  transform: scale(1.1); }
+  background-color: #8e44ad;
+  transform: scale(1.1);
+}
 
 .icon-link img {
   width: 24px;
   height: 24px;
   object-fit: contain;
-  filter: brightness(0) invert(1); 
+  filter: brightness(0) invert(1);
 }
+
 /* Connect with me */
 .connect,
 .freelance {
- background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.05);
   padding: 2rem;
   margin-top: 2rem;
   border-radius: 10px;
@@ -1041,7 +1051,8 @@ textarea {
   width: 20px;
   height: 20px;
   object-fit: contain;
-  filter: brightness(0) invert(1); }
+  filter: brightness(0) invert(1);
+}
 
 .freelance {
   display: flex;
@@ -1074,5 +1085,3 @@ footer {
     flex-direction: row;
   }
 }
-    
-
