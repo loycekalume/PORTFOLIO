@@ -936,6 +936,135 @@ p {
   line-height: 1.5;
   color: #ccc;
 }
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
 
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #9b5de5;
+  position: relative;
+}
+.line{
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(to right, #b620e0, #00cfff);
+  margin: 0 auto 40px auto;
+  border-radius: 2px;
+}
+
+
+section {
+  margin-top: 4rem;
+}
+
+/* Contact section */
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+   
+}
+
+.contact-box {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #444;
+  margin-bottom: 20px;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: none;
+   background-color: rgba(167, 158, 158, 0.05);
+  color: #fff;
+}
+
+.contact-box h3,
+.connect h3 {
+  color: #9b5de5;
+  margin-bottom: 1rem;
+}
+
+.info-item {
+ background-color: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+/* Connect with me */
+.connect,
+.freelance {
+ background-color: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.icons i {
+  font-size: 1.5rem;
+  color: #ccc;
+  background: #2a2a2a;
+  padding: 1rem;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.icons i:hover {
+  background-color: #9b5de5;
+  color: #fff;
+}
+
+.freelance {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.freelance .dot {
+  width: 12px;
+  height: 12px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+footer {
+  background-color: #111;
+  color: #ccc;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .icons {
+    flex-direction: row;
+  }
+}
     
 
