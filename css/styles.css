@@ -42,10 +42,12 @@ header {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 35px;
 }
 
 .nav-links li a {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: #fff;
   font-weight: 500;
@@ -69,6 +71,7 @@ header {
   content: "";
   display: block;
   height: 3px;
+ 
   margin-top: 4px;
   width: 100%;
   background: linear-gradient(to right, #e057fc, #6a5acd);
@@ -77,6 +80,9 @@ header {
   bottom: -6px;
   left: 0;
 }
+
+
+
 
 
 .cv-button {
