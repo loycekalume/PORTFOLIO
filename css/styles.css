@@ -736,10 +736,11 @@ header {
   text-align: center;
 }
 
-.section-title {
+.project-title {
   font-size: 2rem;
   margin-bottom: 2rem;
   color: #b980ff;
+  margin-top:0px;
 }
 
 .certifications-grid {
@@ -778,7 +779,7 @@ header {
 .project-card h3 {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #fff;
+  color: #676196;
   margin-bottom: 0.5rem;
 }
 
@@ -790,8 +791,8 @@ header {
 
 .tech-stack span {
   display: inline-block;
-  background: #2e2e2e;
-  color: #dcdcdc;
+  background-color: #4b4380;  
+  color: #7B68EE;
   padding: 0.3rem 0.6rem;
   margin: 0.2rem;
   border-radius: 8px;
