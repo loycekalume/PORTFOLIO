@@ -1097,14 +1097,8 @@ header {
       border-color: rgba(102, 126, 234, 0.5);
     }
 
-    .interest-icon {
-      font-size: 3rem;
-      margin-bottom: 1.5rem;
-      display: block;
-      position: relative;
-      z-index: 2;
-      animation: iconFloat 3s ease-in-out infinite;
-    }
+    
+    
 
     @keyframes iconFloat {
       0%, 100% { transform: translateY(0px); }
