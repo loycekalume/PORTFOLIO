@@ -16,12 +16,19 @@ body {
 
 /*navbar*/
 header {
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
+    background-color: rgba(23, 23, 34, 0.6); /* Semi-transparent black */
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
   padding: 20px 40px;
-  background-color: #171722;
-  backdrop-filter: blur(8px);
+  
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
+ 
 
 }
 
@@ -43,6 +50,7 @@ header {
   list-style: none;
   display: flex;
   gap: 35px;
+  
 }
 
 .nav-links li a {
