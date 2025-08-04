@@ -579,7 +579,7 @@ header {
 }
 
 .cv-button {
-  background: linear-gradient(to right, #7c3aed, #8b5cf6);
+  background: linear-gradient(to right, #9073c2, #8b5cf6);
   color: #fff;
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
@@ -761,7 +761,7 @@ header {
 .project-title {
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: #b980ff;
+ color: linear-gradient(to right, #db53ae, #652ceb);
   margin-top:0px;
 }
 
@@ -801,7 +801,7 @@ header {
 .project-card h3 {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #676196;
+ color:white;
   margin-bottom: 0.5rem;
 }
 
@@ -813,8 +813,9 @@ header {
 
 .tech-stack span {
   display: inline-block;
-  background-color: #4b4380;  
-  color: #7B68EE;
+  background-color: rgba(93, 11, 175, 0.15);  
+  color: #bf00ff;  
+  border: 1px solid #bf00ff;  
   padding: 0.3rem 0.6rem;
   margin: 0.2rem;
   border-radius: 8px;
@@ -1272,9 +1273,7 @@ section {
   margin-top: 2rem;
 
 }
-/* .message{
-  width:600px;
-  margin-left:20px;} */
+
 
 .contact-box {
   flex: 1;
