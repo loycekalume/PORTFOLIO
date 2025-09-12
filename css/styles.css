@@ -791,7 +791,6 @@ body {
 }
 
 .project-card {
-  /* background: linear-gradient(145deg, #111, #1a1a1a); */
   border-radius: 15px;
   padding: 2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -957,7 +956,7 @@ body {
   flex-wrap: wrap;
   gap: 6rem;
   margin-top: 3rem;
-  justify-content: center; /* keeps them centered */
+  justify-content: center; 
 }
 
 .contact-box.message,
