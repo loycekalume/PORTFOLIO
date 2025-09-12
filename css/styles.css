@@ -1224,14 +1224,61 @@ footer {
   padding: 1rem;
   text-align: center;
 }
+/* ===== CONTACT PAGE RESPONSIVENESS ===== */
 
-/* Responsive */
-@media (max-width: 700px) {
+/* Tablets & below */
+@media (max-width: 900px) {
   .contact-wrapper {
     flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .contact-box.message,
+  .contact-box.info,
+  .connect,
+  .freelance {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+
+  .freelance {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .info-item {
+    margin-left: 0; /* remove desktop spacing */
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 600px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  input, textarea, button {
+    font-size: 0.9rem;
+    padding: 0.7rem;
   }
 
   .icons {
-    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .icon-link img {
+    width: 20px;
+    height: 20px;
   }
 }
