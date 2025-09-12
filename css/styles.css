@@ -1,3 +1,4 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -12,17 +13,22 @@ body {
   background-position: center;
   min-height: 100vh;
   backdrop-filter: brightness(0.8);
+  padding-top: 80px; /* Space for fixed navbar */
 }
 
-/*navbar*/
-/* Base styles */
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  background-color: #0e0b1a;
-  position: relative;
+  padding: 1rem 2rem;
+  background-color: rgba(14, 11, 26, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+  height: 80px; /* Define explicit height */
 }
 
 .logo {
@@ -42,8 +48,13 @@ body {
 
 .nav-links li a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
   font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #5d0baf;
 }
 
 .cv-button {
@@ -53,6 +64,11 @@ body {
   text-decoration: none;
   border-radius: 4px;
   margin-left: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.cv-button:hover {
+  background-color: #7c2cbf;
 }
 
 /* Hidden checkbox */
@@ -71,43 +87,64 @@ body {
 .nav-toggle-label span {
   width: 25px;
   height: 3px;
-  background-color: #333;
+  background-color: #fff;
   border-radius: 2px;
+  transition: all 0.3s ease;
 }
 
 /* Responsive behavior */
 @media (max-width: 768px) {
+  body {
+    padding-top: 70px; /* Adjust for smaller navbar on mobile */
+  }
+  
+  .nav-container {
+    height: 70px;
+    padding: 1rem;
+  }
+  
   .nav-links {
     display: none;
     flex-direction: column;
-    background-color: #fff;
+    background-color: rgba(14, 11, 26, 0.95);
     position: absolute;
     top: 100%;
-    right: 0;
+    left: 0;
     width: 100%;
     padding: 1rem;
+    backdrop-filter: blur(8px);
   }
-
+  
   .nav-links li {
     margin: 0.5rem 0;
   }
-
+  
   .nav-toggle-label {
     display: flex;
   }
-
+  
   .cv-button {
     display: none;
   }
-
+  
   /* Show menu when checkbox is checked */
   .nav-toggle:checked + .nav-toggle-label + nav .nav-links {
     display: flex;
   }
+  
+  /* Animate hamburger icon when active */
+  .nav-toggle:checked + .nav-toggle-label span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .nav-toggle:checked + .nav-toggle-label span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .nav-toggle:checked + .nav-toggle-label span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
 }
-
-
-
 
 
 /* Hero Section */
