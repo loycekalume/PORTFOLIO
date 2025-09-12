@@ -15,20 +15,34 @@
 
 <body>
 
-    <header>
+ <header>
+
         <div class="nav-container">
             <h1 class="logo"><span class="highlight">Portolio</span></h1>
+
+            <!-- 1) Hidden checkbox to track menu state -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+
+            <!-- 2) Label styled as hamburger icon -->
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- 3) Your existing nav -->
             <nav>
                 <ul class="nav-links">
                     <li><a href="/pages/home.html">Home</a></li>
-                    <li><a href="/pages/about.html">About</a></li>
+                    <li><a href="/pages/about.html" class="active">About</a></li>
                     <li><a href="/pages/skills.html">Skills</a></li>
                     <li><a href="/pages/education.html">Education</a></li>
                     <li><a href="/pages/projects.html">Projects</a></li>
                     <li><a href="/pages/interests.html">Interests</a></li>
-                    <li><a href="/pages/contact.html" class="active">Contact</a></li>
+                    <li><a href="/pages/contact.html">Contact</a></li>
                 </ul>
             </nav>
+
             <a href="../assets/Loyce_Kalume_cv.pdf" class="cv-button" download>Download CV</a>
         </div>
     </header>
