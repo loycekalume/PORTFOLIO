@@ -955,9 +955,17 @@ body {
 .contact-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
-  margin-top: 2rem;
+  gap: 6rem;
+  margin-top: 3rem;
+  justify-content: center; /* keeps them centered */
+}
 
+.contact-box.message,
+.contact-box.info {
+  flex: 1;            
+  min-width: 300px;    
+  max-width: 450px;    
+  margin: 0;
 }
 
 
@@ -969,8 +977,7 @@ body {
   padding:20px;
 
   &.message{
-  width:500px;
-  margin-left:20px;
+  
   margin-bottom:60px;
  
   }
@@ -981,7 +988,6 @@ body {
   }
 
 }
-  
 
 
 input, button,
@@ -1047,17 +1053,35 @@ textarea {
 }
 
 /* Connect with me */
+
+.contact-box.info,
 .connect,
 .freelance {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;  
   background-color: rgba(255, 255, 255, 0.05);
-  padding: 2rem;
-  margin-top: 2rem;
+  border: 1px solid #444;
   border-radius: 10px;
-  width:500px;
-  margin-right:20px;
-
-
+  padding: 20px;
+  margin: 0 20px 20px 0; 
 }
+
+
+.connect,
+.freelance {
+  width: auto; 
+  margin-top: 2rem;
+}
+
+
+.freelance {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
 
 
 .icon-circle {
