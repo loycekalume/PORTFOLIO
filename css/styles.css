@@ -123,9 +123,14 @@ body {
     display: flex;
   }
   
+ @media (max-width: 768px) {
   .cv-button {
-    display: none;
+    display: inline-block;  /* instead of none */
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
   }
+}
   
   /* Show menu when checkbox is checked */
   .nav-toggle:checked + .nav-toggle-label + nav .nav-links {
