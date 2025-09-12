@@ -859,6 +859,80 @@ body {
   font-weight: 500;
 }
 
+/* ================== Responsive Styles ================== */
+
+/* Tablets and smaller */
+@media (max-width: 768px) {
+  .education-section h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .cv-download {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 1rem;
+  }
+
+  .cv-button {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .education-card {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .certifications-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+  }
+}
+
+/* Phones and very small screens */
+@media (max-width: 480px) {
+  .education-section h1 {
+    font-size: 1.6rem;
+  }
+
+  .cv-text {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+
+  .certifications-grid {
+    grid-template-columns: 1fr; /* stack certificates */
+  }
+
+  .cert-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .cert-year {
+    align-self: flex-start;
+  }
+
+  .badge {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+  }
+}
 
 
 /* project section */
